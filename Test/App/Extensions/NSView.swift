@@ -10,7 +10,7 @@ extension NSView {
     var backgroundColor: NSColor? {
         get {
             if let layer = layer {
-                return NSColor(CGColor: layer.backgroundColor)
+                return NSColor(CGColor: layer.backgroundColor!)
             } else {
                 return nil
             }
